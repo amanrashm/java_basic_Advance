@@ -16,7 +16,7 @@ public class var_keyword {
         var reader = new InputStreamReader(System.in);
         var bufferedReader = new BufferedReader(reader);
         var names = new ArrayList<>();
-
+        var itr = names.iterator();
         //static typed language
         var num = 9;
         var pi =3.14f;
@@ -27,5 +27,6 @@ public class var_keyword {
         System.out.println(names);
         System.out.println(num);
         System.out.println(pi);
+
     }
 }
