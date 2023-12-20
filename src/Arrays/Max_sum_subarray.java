@@ -5,7 +5,7 @@ public class Max_sum_subarray {
         int currentSum = 0;
         int n = array.length;
         for (int i = 0; i < n; i++) {
-            currentSum = currentSum + array[i];
+            currentSum += array[i];
             if(currentSum > maxSum){
                 maxSum = currentSum;
             }
