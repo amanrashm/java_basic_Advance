@@ -1,10 +1,10 @@
-package Loops;
-public class do_while_loop {
+package Loops_Iterators;
+public class while_loop {
     public static void main(String[] args) {
-        int i = 6;
-        do{
+        int i = 1;
+        while (i <= 5){
             System.out.println("Hii "+i);
             i++;
-        }while (i <= 5);
+        }
     }
 }

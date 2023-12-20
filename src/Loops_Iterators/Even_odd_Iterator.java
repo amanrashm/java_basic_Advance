@@ -1,4 +1,4 @@
-package Loops;
+package Loops_Iterators;
 import java.util.ArrayList;
 public class Even_odd_Iterator {
     public static void main(String[] args) {

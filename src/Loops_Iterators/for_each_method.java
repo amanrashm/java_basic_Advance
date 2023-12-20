@@ -1,4 +1,4 @@
-package Loops;
+package Loops_Iterators;
 import java.util.Arrays;
 import java.util.function.Consumer;
 public class for_each_method {
