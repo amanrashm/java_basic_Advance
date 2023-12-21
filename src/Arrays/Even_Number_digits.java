@@ -9,9 +9,8 @@ public class Even_Number_digits {
                 count1++;
                 arrays[i]=arrays[i]/10;
             }
-            if((count1 & 1) == 0){
+            if((count1 & 1) == 0)
                 count++;
-            }
         }
         return count;
     }
