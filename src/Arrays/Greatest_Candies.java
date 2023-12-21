@@ -5,7 +5,7 @@ public class Greatest_Candies {
     public static List<Boolean> kidsCandies(int [] candies , int extraCandies){
         List<Boolean> ifCandyGreatest = new ArrayList<>();
         int n = candies.length;
-        int totalCandy = 0;
+        int totalCandy;
         for (int i = 0; i < n; i++) {
             totalCandy = (candies[i]+extraCandies);
             boolean val = true;
