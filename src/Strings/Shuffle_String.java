@@ -3,8 +3,8 @@ public class Shuffle_String {
     public static String restoreString(String s, int[] indices) {
         char[] ch = new char[s.length()];
         for (int i = 0; i < s.length(); i++) {
-            int target = indices[i];
-            ch[target] = s.charAt(i);
+            /*int target = indices[i];*/
+            ch[indices[i]] = s.charAt(i);
         }
         return String.valueOf(ch);
     }
