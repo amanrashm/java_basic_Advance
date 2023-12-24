@@ -1,7 +1,5 @@
 package Arrays;
-
 import java.util.Arrays;
-
 public class Build_Array_From_Permutation {
     public static int[] buildArray (int [] nums){
         int [] arr = new int[nums.length];
