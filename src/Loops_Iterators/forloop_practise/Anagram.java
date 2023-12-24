@@ -36,8 +36,8 @@ public class Anagram {
                 }
             }
         }*/
-        int al [] = new int[256];
-        int bl [] = new int[256];
+        int[] al = new int[256];
+        int[] bl = new int[256];
         for (var c : str1.toCharArray()){
             var index = (int) c;
             al[index]++;

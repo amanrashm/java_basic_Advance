@@ -5,10 +5,10 @@ public class Stock_Buy_Sell1 {
         int n = array.length;
         int minSoFar = array[0];
 
-        for (int i = 0; i < n; i++) {
-            minSoFar = Math.min(minSoFar , array[i]);
-            int profit = array[i] - minSoFar;
-            maxProfit = Math.max(maxProfit , profit);
+        for (int j : array) {
+            minSoFar = Math.min(minSoFar, j);
+            int profit = j - minSoFar;
+            maxProfit = Math.max(maxProfit, profit);
         }
         return maxProfit;
     }

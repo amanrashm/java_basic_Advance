@@ -11,14 +11,14 @@ public class Find_ith_bit {
         } else {
             return 0;
         }*/
-        //System.out.println(((n & (1 << (i - 1))) >> (i - 1)));
-        System.out.println((n >> (i-1)) % 2);
+        System.out.println(((n & (1 << (i - 1))) >> (i - 1)));
+        //System.out.println((n >> (i-1)) % 2);
     }
     public static void main(String[] args) {
         /*System.out.println(Find_ith_bit(2,1));
         System.out.println(Find_ith_bit(20, 3));
         System.out.println(Find_ith_bit(20, 100));*/
-        int n =1 , i = 3;
+        int n =20 , i = 3;
         Find_ith_bit(n,i);
     }
 }

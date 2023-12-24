@@ -5,14 +5,17 @@ public class Array_Suffle_X1_Y1 {
     public static int[] shuffle(int[] nums, int n) {
         int[] result = new int[nums.length];
         int i = 0,j = n, c = 0;
-        while(j < 2*n){
-            result[c++] = nums[i++];
-            result[c++] = nums[j++];
+        if((nums.length & 1) == 0){
+            while (j < 2 * n) {
+                result[c++] = nums[i++];
+                result[c++] = nums[j++];
+            }
         }
         return result;
     }
     public static void main(String[] args) {
         int [] n = {1,2,3,4,4,3,2,1};
-            System.out.println(Arrays.toString(shuffle(n, 4)));
+        int m = (n.length)/2;
+            System.out.println(Arrays.toString(shuffle(n, m)));
     }
 }

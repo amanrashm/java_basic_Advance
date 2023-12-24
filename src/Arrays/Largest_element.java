@@ -1,14 +1,18 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class Largest_element {
     public static int largest(int [] arrays){
         int largest = arrays[0];
         int n = arrays.length;
-        for (int i = 1; i < n; i++) {
+        /*for (int i = 1; i < n; i++) {
             if(largest < arrays[i]){
                 largest = arrays[i];
             }
-        }
+        }*/
+        Arrays.sort(arrays);
+        largest = arrays[arrays.length-1];
         return largest;
     }
     public static void main(String[] args) {
