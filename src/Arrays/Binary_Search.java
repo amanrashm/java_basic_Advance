@@ -16,7 +16,6 @@ public class Binary_Search {
     public static void main(String[] args) {
         int [] nums = {2,4,5,6,7,8,9};
         int tgt = 9;
-
         int result = BinarySearch(nums, tgt);
         if (result != -1)
             System.out.println("Element found at index:- "+result);
