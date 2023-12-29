@@ -1,7 +1,5 @@
 package Arrays;
-
 import java.util.Arrays;
-
 public class Longest_Common_Prefix {
     public static String longestCommonPrefix(String[] strs) {
         /*if (strs == null || strs.length == 0) {
@@ -25,7 +23,8 @@ public class Longest_Common_Prefix {
         String s1 = strs[0];
         String s2 = strs[strs.length - 1];
         int i = 0;
-        while (i < Math.min(s1.length(), s2.length())) {
+        while (true) {
+            if (!(i < Math.min(s1.length(), s2.length()))) break;
             if (s1.charAt(i) == s2.charAt(i)) {
                 i++;
             } else {
