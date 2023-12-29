@@ -1,5 +1,5 @@
 package Arrays;
-public class Majority_element {
+public class Majority_element_Index {
     public static int Majority_element(int [] Majority_element){
         int ansIndex = 0;
         int count = 0;
@@ -7,7 +7,9 @@ public class Majority_element {
         for (int i = 0; i < size ; i++) {
             if(Majority_element[i] == Majority_element[ansIndex]){
                 count++ ;
-            }else {count-- ;}
+            }else {
+                count-- ;
+            }
             if(count == 0){
                 ansIndex = i;
                 count = 1;

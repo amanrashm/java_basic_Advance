@@ -1,6 +1,6 @@
 package Loops_Iterators.forloop_practise;
 import java.util.Arrays;
-public class selection_sort {
+public class  selection_sort {
     public static int[] selectionSort(int [] arrays){
         int n = arrays.length;
         int [] nums = Arrays.copyOf(arrays, arrays.length);
