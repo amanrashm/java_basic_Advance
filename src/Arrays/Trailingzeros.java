@@ -1,16 +1,17 @@
 package Arrays;
 public class Trailingzeros {
     public static boolean hasTrailingZeros(int[] nums) {
-        int count = 0;
-        for (int num : nums) {
+        var count = 0;
+        for (var num : nums) {
             if ((num & 1) == 0) {
+                num >>= 1;
                 count++;
             }
         }
         return count >= 2;
     }
     public static void main(String[] args) {
-        int [] nums = {1,3,5,7,9};
+        int [] nums = {1,2,3,4,5};
         System.out.println(hasTrailingZeros(nums));
     }
 }
