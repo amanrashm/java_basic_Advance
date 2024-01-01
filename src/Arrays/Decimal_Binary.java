@@ -2,8 +2,7 @@ package Arrays;
 import java.util.Scanner;
 public class Decimal_Binary {
     public static int binary(int n){
-        var bit = 0;
-        int i = 0;
+        var bit = 0; int i = 0;
         while(n != 0){
             var bits = n & 1;
             bit = (int) (bits * Math.pow(10, i) + bit);
@@ -13,8 +12,7 @@ public class Decimal_Binary {
         return bit;
     }
     public static int decimal(int n){
-        var bit = 0;
-        var i = 0;
+        var bit = 0; var i = 0;
         while(n != 0){
             var bits = n % 10;
             bit = bit + (bits * (int) Math.pow(2, i));
