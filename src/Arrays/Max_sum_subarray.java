@@ -3,12 +3,9 @@ public class Max_sum_subarray {
     public static int Max_sum_subarray(int [] array){
         int maxSum = 0;
         int currentSum = 0;
-        int n = array.length;
-        for (int i = 0; i < n; i++) {
-            currentSum += array[i];
-            if(currentSum > maxSum){
-                maxSum = currentSum;
-            }
+        for (int j : array) {
+            currentSum += j;
+            if (currentSum > maxSum) maxSum = currentSum;
             if (currentSum < 0) currentSum = 0;
         }
         return maxSum;

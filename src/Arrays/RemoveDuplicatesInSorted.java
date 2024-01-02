@@ -3,10 +3,8 @@ public class RemoveDuplicatesInSorted {
     public static int removeDuplicates(int[] nums) {
         var newIndex = 1;
         for (var i = 0; i < nums.length-1; i++) {
-            if(nums[i] < nums[i + 1]){
-                nums[newIndex]  = nums[i + 1];
-                newIndex++;
-            }
+            if(nums[i] < nums[i + 1])
+                nums[newIndex++]  = nums[i + 1];
         }
         return newIndex;
     }

@@ -1,6 +1,7 @@
 package Arrays;
 import java.util.ArrayList;
 import java.util.List;
+//medium
 public class Majority_Element2 {
     public static List<Integer> majorityElement(int[] nums) {
         int size = nums.length;

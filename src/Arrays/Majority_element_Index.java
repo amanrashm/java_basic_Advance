@@ -1,5 +1,6 @@
 package Arrays;
 public class Majority_element_Index {
+    //wrong Code
     public static int Majority_element(int [] Majority_element){
         int ansIndex = 0;
         int count = 0;
@@ -18,7 +19,7 @@ public class Majority_element_Index {
         return ansIndex;
     }
     public static void main(String[] args) {
-        int [] n = {5,1,4,1,1};
+        int [] n = {5,1,4,1,1,5,5,5,4,4};
         System.out.println(Majority_element(n));
     }
 }

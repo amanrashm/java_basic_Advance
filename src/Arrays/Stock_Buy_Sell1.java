@@ -1,10 +1,9 @@
 package Arrays;
 public class Stock_Buy_Sell1 {
+    //Max possible difference between any 2 element
     public static int Stock_Buy_Sell1(int [] array){
         int maxProfit = 0;
-        int n = array.length;
         int minSoFar = array[0];
-
         for (int j : array) {
             minSoFar = Math.min(minSoFar, j);
             int profit = j - minSoFar;

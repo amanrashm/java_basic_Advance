@@ -1,5 +1,4 @@
 package Arrays;
-
 public class Majority_Element {
     public static int majorityElement(int[] nums) {
             int ans = nums[0];

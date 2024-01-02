@@ -1,4 +1,4 @@
-package Loops_Iterators;
+package Codechef.starter113;
 import java.util.Scanner;
 public class question3 {
     public static void main(String[] args) {
