@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Decompress_Array_Frequency {
     public static int[] decompressRLElist(int[] nums) {
         int n = nums.length;
-        int [] subArray = new int[n %2];
+        int [] subArray = new int[n % 2];
 
         return subArray;
     }

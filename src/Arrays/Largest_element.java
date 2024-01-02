@@ -1,7 +1,5 @@
 package Arrays;
-
 import java.util.Arrays;
-
 public class Largest_element {
     public static int largest(int [] arrays){
         int largest = arrays[0];
@@ -12,8 +10,9 @@ public class Largest_element {
             }
         }*/
         Arrays.sort(arrays);
-        largest = arrays[arrays.length-1];
-        return largest;
+        /*largest = arrays[arrays.length-1];
+        return largest;*/
+        return arrays[arrays.length-1];
     }
     public static void main(String[] args) {
         int [] n = {10,20,1,30,3,40,4};

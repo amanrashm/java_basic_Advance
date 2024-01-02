@@ -20,9 +20,9 @@ public class Longest_Common_Prefix {
         }
         return prefix;*/
         Arrays.sort(strs);
-        String s1 = strs[0];
-        String s2 = strs[strs.length - 1];
-        int i = 0;
+        var s1 = strs[0];
+        var s2 = strs[strs.length - 1];
+        var i = 0;
         while (true) {
             if (!(i < Math.min(s1.length(), s2.length()))) break;
             if (s1.charAt(i) == s2.charAt(i)) {

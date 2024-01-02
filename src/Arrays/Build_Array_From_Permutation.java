@@ -11,7 +11,7 @@ public class Build_Array_From_Permutation {
         return arr;
     }
     public static void main(String[] args) {
-        int [] n = {0,2,1,5,3,4};
+        int [] n = {5,0,1,2,3,4};
         System.out.println(Arrays.toString(buildArray(n)));
     }
 }
