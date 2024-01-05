@@ -8,7 +8,8 @@ public class Streams {
         // A stream is a sequence of objects that supports various methods
 // which can be pipelined to produce the desired result
 // Stream does not store elements
-// It simply conveys elements from a source such as a data structure, an array, or an I/O channel, through a pipeline of computational operations
+// It simply conveys elements from a source such as a data structure, an array, or
+// an I/O channel, through a pipeline of computational operations
 // Stream is functional in nature
 // Operations performed on a stream does not modify it's source
 // For example, filtering a Stream obtained from a collection produces a
@@ -34,6 +35,12 @@ public class Streams {
         // using map method
         list.stream().filter(p -> p.price > 30000).map(pm -> pm.price).forEach(System.out::println);
         //using Optional class
+        //explanation for every variable in below line
+        //list.stream() returns a sequential stream considering collection as its source
+        //filter() method is used to filter stream elements on the basis of given predicate
+        //map() method is used to transform each element of the stream
+        //findFirst() method returns an Optional describing the first element of this stream, or an empty Optional if the stream is empty
+        //orElse() method returns the value if present in Optional container
         list.stream().filter(p -> p.price == 30000).map(pm -> pm.price).findFirst().ifPresent(System.out::println);
         // using Optional class ifPresentOrElse method
         list.stream().filter(p -> p.price == 30000).map(pm -> pm.price).findFirst()
