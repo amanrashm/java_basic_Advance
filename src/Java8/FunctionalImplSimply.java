@@ -27,6 +27,7 @@ public class FunctionalImplSimply implements Functional_Interface{
     public static void main(String[] args) {
         FunctionalImplSimply obj = new FunctionalImplSimply();
         System.out.println(obj.addition(5, 6));
+        // It uses class object too to call the default method
         obj.display();
         Functional_Interface.show();
     }
