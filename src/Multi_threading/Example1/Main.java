@@ -1,4 +1,4 @@
-package Multi_threading;
+package Multi_threading.Example1;
 class Main
 {
     public static void main(String[] args) {
@@ -7,8 +7,7 @@ class Main
         Consume c=new Consume(comp);
         p.start();
         c.start();
-        p.stop();
-        c.stop();
-
+        /*p.stop();
+        c.stop();*/
     }
 }

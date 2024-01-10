@@ -1,4 +1,4 @@
-package Multi_threading;
+package Multi_threading.Example1;
 class MyAnotherThread extends Thread {
     public void run() {
         //task for thread

@@ -1,4 +1,7 @@
-package Multi_threading;
+package Multi_threading.Example1;
+
+import Multi_threading.Example1.Company;
+
 class Consume extends Thread{
     Company c;
     Consume(Company c)

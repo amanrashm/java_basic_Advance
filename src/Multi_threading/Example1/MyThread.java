@@ -1,4 +1,4 @@
-package Multi_threading;
+package Multi_threading.Example1;
 public class MyThread implements Runnable
 {
     public void run()
