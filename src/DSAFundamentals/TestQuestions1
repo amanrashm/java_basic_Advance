@@ -1,0 +1,158 @@
+Remove Consecutive Characters
+Problem Description
+
+Given a string A and integer B, remove all consecutive same characters that have length exactly B.
+
+
+
+Problem Constraints
+1 <= |A| <= 100000
+
+1 <= B <= |A|
+
+
+
+Input Format
+First Argument is string A.
+
+Second argument is integer B.
+
+
+
+Output Format
+Return a string after doing the removals.
+
+
+
+Example Input
+Input 1:
+
+A = "aabcd"
+B = 2
+Input 2:
+
+A = "aabbccd"
+B = 2
+
+
+Example Output
+Output 1:
+
+ "bcd"
+Output 2:
+
+ "d"
+
+
+Example Explanation
+Explanation 1:
+
+ "aa" had length 2.
+Explanation 2:
+
+ "aa", "bb" and "cc" had length of 2.
+ // java Code
+    public class Solution {
+        public String solve(String A, int B) {
+            int n = A.length();
+            if(n==1){
+                return A;
+            }
+            StringBuilder sb = new StringBuilder();
+            int i=0;
+            while(i<n){
+                int j=i;
+                while(j<n && A.charAt(i)==A.charAt(j)){
+                    j++;
+                }
+                if(j-i==B){
+                    i=j;
+                }else{
+                    while(i<j){
+                        sb.append(A.charAt(i));
+                        i++;
+                    }
+                }
+            }
+            return sb.toString();
+        }
+
+        Reverse the String
+        Problem Description
+        You are given a string A of size N.
+
+        Return the string A after reversing the string word by word.
+
+        NOTE:
+
+        A sequence of non-space characters constitutes a word.
+        Your reversed string should not contain leading or trailing spaces, even if it is present in the input string.
+        If there are multiple spaces between words, reduce them to a single space in the reversed string.
+
+
+        Problem Constraints
+        1 <= N <= 3 * 105
+
+
+
+        Input Format
+        The only argument given is string A.
+
+
+
+        Output Format
+        Return the string A after reversing the string word by word.
+
+
+
+        Example Input
+        Input 1:
+        A = "the sky is blue"
+        Input 2:
+        A = "this is ib"
+
+
+        Example Output
+        Output 1:
+        "blue is sky the"
+        Output 2:
+        "ib is this"
+
+
+        Example Explanation
+        Explanation 1:
+        We reverse the string word by word so the string becomes "blue is sky the".
+        Explanation 2:
+        We reverse the string word by word so the string becomes "ib is this".
+
+        // java Code
+        public class Solution {
+            public String solve(String A) {
+                String[] arr = A.split(" ");
+                StringBuilder sb = new StringBuilder();
+                for(int i=arr.length-1;i>=0;i--){
+                    sb.append(arr[i]);
+                    sb.append(" ");
+                }
+                return sb.toString().trim();
+            }
+        }
+
+ Which of these method of class String is used to extract a single character from a String object?
+charAt()
+
+What will s2 contain after following lines of Java code?
+
+String s1 = "one";
+
+String s2 = s1.concat("two")
+
+onetwo
+
+What will be output of below statements?
+
+String s = “Scaler Academy”
+
+System.out. println(s.substring(0,6));
+
+Scaler

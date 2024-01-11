@@ -1,7 +1,7 @@
 package Strings;
 public class Binary_String {
     public static void main(String[] args) {
-        String str = "111";
+        String str = "1010";
         System.out.println(binary(str));
     }
     private static int binary(String str) {

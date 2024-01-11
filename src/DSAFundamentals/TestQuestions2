@@ -1,0 +1,23 @@
+Recursion
+// java code
+class Solution {
+    public int maxDepth(TreeNode root) {
+        if(root == null) return 0;
+        int left = maxDepth(root.left) + 1;
+        int right = maxDepth(root.right) + 1;
+        return Math.max(left, right);
+    }
+}
+
+example 2: Maximum Depth of N-ary Tree
+// java code
+class Solution {
+    public int maxDepth(Node root) {
+        if(root == null) return 0;
+        int max = 0;
+        for(Node child : root.children){
+            max = Math.max(max, maxDepth(child));
+        }
+        return max + 1;
+    }
+}

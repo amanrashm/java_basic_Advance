@@ -13,6 +13,12 @@ class TreeNode {
         this.left = left;
         this.right = right;
     }
+
+    public TreeNode(int i) {
+    }
+
+    public TreeNode(Integer integer) {
+    }
 }
 /*node 2
 * node left 4

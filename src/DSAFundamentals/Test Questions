@@ -1,0 +1,194 @@
+How many swappings in the optimal scenario will be there for reversal of arr[5] = {10,20,30,40,50} ?
+I am getting 2 as the answer.
+
+What is the Worst case number of comparisons required to find the largest element in an array of N elements?
+I am getting N-1 as the answer.
+
+What is the index of the last element of an array with 9 elements?
+I am getting 8 as the answer.
+
+ Linear Search-p
+Problem Description
+You are given an array of integers A of length N and an integer B.
+
+Return 1 if B is present in the array A, 0 otherwise.
+
+
+
+Problem Constraints
+1 <= N <= 105
+1 <= Ai <= 109
+1 <= B <= 109
+
+
+Input Format
+First argument is the integer array A.
+Second argument is the integer B.
+
+Output Format
+Return 1 / 0, depending on the presence of B.
+
+Example Input
+Input 1:
+A = [1, 4, 3, 2]
+B = 2
+Input 2:
+
+A = [1, 4, 3, 2]
+B = 5
+
+
+Example Output
+Output 1:
+1
+Output 2:
+
+0
+
+
+Example Explanation
+Explanation 1:
+2 is present in the array.
+Input 2:
+
+5 is not present in the array.
+
+//Java Code
+public class Solution {
+    public int solve(int[] A, int B) {
+        for(int i=0;i<A.length;i++){
+            if(A[i]==B){
+                return 1;
+            }
+        }
+        return 0;
+    }
+}
+
+Max Min of an Array
+Problem Description
+Given an array A of size N. You need to find the sum of Maximum and Minimum element in the given array.
+
+
+Problem Constraints
+1 <= N <= 105
+-109 <= A[i] <= 109
+
+
+Input Format
+First argument A is an integer array.
+
+
+Output Format
+Return the sum of maximum and minimum element of the array
+
+
+Example Input
+Input 1:
+
+A = [-2, 1, -4, 5, 3]
+Input 2:
+
+A = [1, 3, 4, 1]
+
+
+Example Output
+Output 1:
+
+1
+Output 2:
+
+5
+
+
+Example Explanation
+Explanation 1:
+
+Maximum Element is 5 and Minimum element is -4. (5 + (-4)) = 1.
+Explanation 2:
+
+Maximum Element is 4 and Minimum element is 1. (4 + 1) = 5.
+
+//Java Code
+public class Solution {
+    public int solve(int[] A) {
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int i=0;i<A.length;i++){
+            if(A[i]>max){
+                max = A[i];
+            }
+            if(A[i]<min){
+                min = A[i];
+            }
+        }
+        return max+min;
+    }
+}
+
+
+Remove Primes
+Problem Description
+An ArrayList A of positive integers is given. You need to remove prime numbers from the given ArrayList and return the updated ArrayList.
+
+
+Problem Constraints
+1 <= N <= 10000, where N is the size of the arraylist A.
+
+
+Input Format
+The first line of input is an integer indicating the size of the ArrayList.
+The second line of input consists of space-separated integers, which denote the elements of the ArrayList.
+
+
+Output Format
+Print the updated ArrayList after removing all the duplicated from it.
+
+
+Example Input
+Input 1:
+4
+3 12 13 15
+
+Input 2:
+5
+1 2 3 4 5
+
+
+Example Output
+Output 1:
+12 15
+
+Output 2:
+1 4
+
+
+Example Explanation
+Explanation 1 :
+3 and 13 are prime numbers, hence not present in the updated list.
+Explanation 2 :
+2, 3, and 5 are prime numbers.
+
+//Java Code
+public class Solution {
+    public int solve(ArrayList<Integer> A) {
+        for(int i=0;i<A.size();i++){
+            if(isPrime(A.get(i))){
+                A.remove(i);
+                i--;
+            }
+        }
+        return A.size();
+    }
+    public boolean isPrime(int n){
+        if(n==1){
+            return true;
+        }
+        for(int i=2;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                return true;
+            }
+        }
+        return false;
+    }
+}
