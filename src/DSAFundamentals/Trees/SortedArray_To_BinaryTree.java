@@ -1,4 +1,4 @@
-package Trees;
+package DSAFundamentals.Trees;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Trees;
+package DSAFundamentals.Trees;
 public class SymmetricTree {
     public boolean isSymmetric(TreeNode root) {
         if(root == null) return true;

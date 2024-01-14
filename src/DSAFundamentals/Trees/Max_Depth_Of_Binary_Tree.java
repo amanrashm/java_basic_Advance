@@ -1,4 +1,4 @@
-package Trees;
+package DSAFundamentals.Trees;
 public class Max_Depth_Of_Binary_Tree {
     public static int maxDepth(TreeNode root) {
         if(root == null) return 0;

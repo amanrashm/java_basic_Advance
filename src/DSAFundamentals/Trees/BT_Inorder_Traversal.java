@@ -1,4 +1,4 @@
-package Trees;
+package DSAFundamentals.Trees;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +40,13 @@ public class BT_Inorder_Traversal {
     }
     public static void main(String [] args) {
         TreeNode root = new TreeNode();
+        root.right = new TreeNode();
+        root.left = new TreeNode();
+        root.val = 1;
+        root.left.val = 4;
+        root.left.right.val = 5;
+        root.right.val = 6;
+        root.right.left.val = 7;
         inorderTraversal(root).forEach(System.out::println);
     }
 }

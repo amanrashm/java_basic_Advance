@@ -1,4 +1,4 @@
-package Trees;
+package DSAFundamentals.Trees;
 public class Same_Tree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null && q == null) return true;

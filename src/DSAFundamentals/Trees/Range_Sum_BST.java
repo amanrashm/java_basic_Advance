@@ -1,4 +1,4 @@
-package Trees;
+package DSAFundamentals.Trees;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +39,10 @@ public class Range_Sum_BST {
     }
     /*static class TreeNode {
         int val;
-        Trees.TreeNode left;
-        Trees.TreeNode right;
+        DSAFundamentals.Trees.TreeNode left;
+        DSAFundamentals.Trees.TreeNode right;
         TreeNode() { this.val = val; }
-        TreeNode(Trees.TreeNode left, Trees.TreeNode right, int val) {
+        TreeNode(DSAFundamentals.Trees.TreeNode left, DSAFundamentals.Trees.TreeNode right, int val) {
             this.val = val;
             this.left = left;
             this.right = right;
