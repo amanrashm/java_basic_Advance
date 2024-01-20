@@ -4,11 +4,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class Find_Max_Distance_from_Origin {
-    //int arr[][] = {{-2,10},{2,10},{3,-6},{7,18}};
-    //Sort this 2D array based on the distance from origin using cartesian distance formula
-    // every element consist of x-axis and Y-axis value. if Distance is same then sort based on x-axis value.
-    //sort using Comparator / comparable
-    //find the max distance from origin
     public static int maxDistanceFromORigin(int[][] arr) {
         Arrays.sort(arr, new Comparator<int[]>() {
             @Override

@@ -11,7 +11,6 @@ public class sieve_of_eratosthenes_prime_number {
                 isPrime[j] = false;
             }
         }
-
         return isPrime;
     }
     public static void main(String[] args) {

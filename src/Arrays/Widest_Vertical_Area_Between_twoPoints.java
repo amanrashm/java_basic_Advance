@@ -1,7 +1,5 @@
 package Arrays;
-
 import java.util.Arrays;
-
 public class Widest_Vertical_Area_Between_twoPoints {
     public static int maxWidthOfVerticalArea(int[][] points) {
         int[] Sorted = Arrays.stream(points).mapToInt(point -> point[0]).sorted().toArray();

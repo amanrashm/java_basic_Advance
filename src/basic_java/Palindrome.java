@@ -10,7 +10,7 @@ public class Palindrome {
         return x == invertedNumber || x == invertedNumber / 10;
     }
     public static void main(String[] args) {
-        var x = 10;
+        var x = 101;
         System.out.println(isPalindrome(x));
     }
 }
