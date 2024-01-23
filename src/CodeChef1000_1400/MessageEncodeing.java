@@ -4,39 +4,20 @@ public class MessageEncodeing {
     public static void main (String[] args) throws java.lang.Exception {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while(t --> 0){
+        for(int i=0; i<t; i++){
             int n = sc.nextInt();
             String s = sc.next();
-            char [] arr = s.toCharArray();
-            for(int i = 0; i < n-1; i += 2){
-                arr[i] = (char) (arr[i] ^ arr[i+1]);
-                arr[i+1] = (char) (arr[i] ^ arr[i+1]);
-                arr[i] = (char) (arr[i] ^ arr[i+1]);
-                if(s.length() % 2 == 0) {
-                    if (arr[i] >= 'a' && arr[i] <= 'm') {
-                        System.out.print(swap(arr[i]));
-                        System.out.print(swap(arr[i + 1]));
-                    } else if (arr[i] >= 'n' && arr[i] <= 'z') {
-                        System.out.print(swap(arr[i]));
-                        System.out.print(swap(arr[i + 1]));
-                    }
-                }
-                else {
-                    if (arr[i] >= 'a' && arr[i] <= 'm') {
-                        System.out.print(swap(arr[i]));
-                        System.out.print(swap(arr[i + 1]));
-                    } else if (arr[i] >= 'n' && arr[i] <= 'z') {
-                        System.out.print(swap(arr[i]));
-                        System.out.print(swap(arr[i + 1]));
-                        if(arr.length - 1 == arr[i])
-                            System.out.print(swap(arr[i + 2]));
-                    }
-                }
-            }break;
+            char[] c = s.toCharArray();
+            for(int j=0; j<n-1; j=j+2){
+                char d = c[j];
+                c[j] = c[j+1];
+                c[j+1] = d;
+            }
+            for(int j=0; j<n; j++){
+                c[j] = (char)(219 - (int)c[j]);
+                System.out.print(c[j] + "");
+            }
+            System.out.println();
         }
-    }
-    //method to swap characters in reverse order of alphabet example a -> z, b -> y, c -> x, etc.
-    public static char swap(char c){
-        return (char)('z' - (c - 'a'));
     }
 }
