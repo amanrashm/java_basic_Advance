@@ -2,7 +2,7 @@ package Java_17;
 
 public class Switch_Expression {
     public static void main(String[] args) {
-        String day = "Mon";
+        String day = "Sun";
         String time = "";
         //switch Statement
         /*switch (day){
@@ -14,7 +14,7 @@ public class Switch_Expression {
         // it also uses arrow and
         // also do : with yield
         time = switch (day){
-            case "Sat" , "Sun" : /*->*/ yield "6am";
+            case "Sat" , "Sun" : yield "6am";
             case "Wed" : /*->*/ yield "8am";
             default : /*->*/ yield "7am";
         };

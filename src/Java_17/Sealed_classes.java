@@ -20,6 +20,6 @@ non-sealed interface Y extends Sealed_Interface1 {
 }
 public class Sealed_classes {
     public static void main(String[] args) {
-
+        System.out.print("Aman");
     }
 }
