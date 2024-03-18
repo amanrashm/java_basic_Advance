@@ -110,5 +110,38 @@ Testing in Java
 In 14-testing-in-java, explore testing methodologies:
 
 JUnit
-TestNG
+TestNGOfficial Links for Docker Installation:
+https://docs.docker.com/desktop/insta...
+https://learn.microsoft.com/en-us/win...
+https://learn.microsoft.com/en-us/win...
+
+Manual Steps for WSL Installations:
+Step 1 - Enable the Windows Subsystem for Linux
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+Step 2 - Check requirements for running WSL 2
+For x64 systems: Version 1903 or later, with Build 18362.1049 or later.
+For ARM64 systems: Version 2004 or later, with Build 19041 or later.
+
+Step 3 - Enable Virtual Machine feature
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Step 4 - Download the Linux kernel update package
+systeminfo | find "System Type"
+Download and Install - WSL2 Linux kernel update package for x64 machines
+https://wslstorestorage.blob.core.win...
+wsl.exe --update
+
+Step 5 - Set WSL 2 as your default version
+wsl --set-default-version 2
+
+Step 6 - Install your Linux distribution of choice
+wsl -l -o
+wsl --install -d Ubuntu
+
+Step 7 - Verify WSL Instalation:
+wsl --version
+
+Step 8 - Proceed for Docker Installation
+
 Feel free to contribute, ask questions, and share your knowledge as you progress through this learning path. Happy coding!
